@@ -1,0 +1,118 @@
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #eaf4fb;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  color: #222;
+}
+
+/* Strip biru atas & bawah */
+.top-bar, .bottom-bar {
+  background-color: #4682A9;
+  color: #FFFBDE;
+  text-align: center;
+  padding: 1rem;
+  font-weight: 600;
+}
+
+/* Animasi fade-in saat load */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.2s ease-out forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Konten utama */
+.content {
+  padding: 2.5rem 1.5rem 4rem;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Gambar kucing (diganti ke gambar lokal) */
+.cat-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+.cat-image:hover {
+  transform: scale(1.05) rotate(2deg);
+}
+
+/* Judul */
+h1 {
+  font-size: 2.5rem;
+  color: #749BC2;
+  margin-bottom: 0.3rem;
+}
+.highlight {
+  color: #91C8E4;
+}
+
+/* Subjudul */
+.subtitle {
+  color: #444;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+/* Section styling */
+section {
+  margin-top: 2.5rem;
+  text-align: left;
+}
+section h2 {
+  color: #749BC2;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+/* List project */
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 1rem;
+}
+ul li {
+  margin-bottom: 0.6rem;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+/* Link styling */
+a {
+  color: #749BC2;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+a:hover {
+  color: #FFFBDE;
+  text-decoration: underline;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .cat-image {
+    width: 100px;
+    height: 100px;
+  }
+}
+
